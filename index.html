@@ -3,64 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Betting Arena Review</title>
+  <meta name="description" content="Expert betting platform reviews, winning strategies, and professional gambling tips from industry experts">
+  <meta name="keywords" content="betting reviews, gambling tips, sports betting, casino strategies">
+  <title>Betting Arena Review - Professional Gambling Insights</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <style>
+    :root {
+      --primary-color: #1a1aff;
+      --secondary-color: #3366ff;
+      --text-light: #ffffff;
+      --background-light: #f5f5f5;
+    }
+
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: #f5f5f5;
+      background-color: var(--background-light);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1a1aff;
-      color: white;
-      padding: 15px 20px;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .logo {
-      font-size: 1.5em;
-      font-weight: bold;
+      font-size: 1.8em;
+      font-weight: 700;
+      letter-spacing: 1.5px;
     }
 
     nav {
       display: flex;
+      gap: 2rem;
     }
 
     nav a {
-      color: white;
+      color: var(--text-light);
       text-decoration: none;
-      margin: 0 10px;
       font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
     }
 
     nav a:hover,
     nav a.current {
-      text-decoration: underline;
-      font-weight: bold;
+      background-color: rgba(255,255,255,0.1);
+      text-decoration: none;
     }
 
     .menu-toggle {
       display: none;
       flex-direction: column;
       cursor: pointer;
+      padding: 0.5rem;
     }
 
     .menu-toggle div {
       width: 25px;
       height: 3px;
-      background-color: white;
+      background-color: var(--text-light);
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .hero {
@@ -69,55 +90,171 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(to bottom right, #e6e6ff, #f5f5f5);
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #e6e6ff 0%, #f0f0ff 100%);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
     }
 
     .btn {
-      background-color: #3366ff;
-      color: white;
-      padding: 12px 25px;
+      background-color: var(--secondary-color);
+      color: var(--text-light);
+      padding: 12px 30px;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
+      border-radius: 25px;
+      font-size: 1.1rem;
       cursor: pointer;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
     }
 
     .btn:hover {
       background-color: #0040ff;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,64,255,0.3);
+    }
+
+    .featured-posts {
+      padding: 4rem 2rem;
+      background-color: var(--text-light);
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .post-card {
+      background: var(--text-light);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .post-content {
+      padding: 1.5rem;
+    }
+
+    .post-content h3 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .post-content p {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .read-more {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .read-more:hover {
+      color: var(--primary-color);
+      transform: translateX(5px);
     }
 
     footer {
-      background-color: #1a1aff;
-      color: white;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 2rem 1rem;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: rgba(255,255,255,0.8);
+      padding-left: 5px;
+    }
+
+    .copyright {
       text-align: center;
-      padding: 10px 0;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
 
     @media (max-width: 768px) {
       nav {
         display: none;
         flex-direction: column;
-        background-color: #1a1aff;
+        background-color: var(--primary-color);
         position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 150px;
-        border-radius: 5px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       }
 
       nav a {
-        margin: 10px;
-      }
-
-      nav.active {
-        display: flex;
+        margin: 0.5rem 0;
       }
 
       .menu-toggle {
         display: flex;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .posts-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -125,11 +262,11 @@
 <body>
   <header>
     <div class="logo">Betting Arena Review</div>
-    <div class="menu-toggle" onclick="toggleMenu()">
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
       <div></div>
       <div></div>
       <div></div>
-    </div>
+    </button>
     <nav id="nav-links">
       <a href="index.html" class="current">Home</a>
       <a href="reviews.html">Reviews</a>
@@ -138,16 +275,70 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <div>
-      <h1>Welcome to Betting Arena Review</h1>
-      <p>Your trusted source for betting platform reviews, expert tips, and winning strategies.</p>
-      <button class="btn">Get Notified</button>
-    </div>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Professional Betting Insights & Strategies</h1>
+        <p>Expert reviews of top betting platforms, winning strategies, and professional gambling tips from industry experts.</p>
+        <button class="btn">Get Premium Insights</button>
+      </div>
+    </section>
+
+    <section class="featured-posts">
+      <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-content">
+            <h3>Top 5 Betting Platforms 2024</h3>
+            <p>Comprehensive analysis of the best betting platforms this year, comparing odds, features, and user experience.</p>
+            <a href="#" class="read-more">Read Review →</a>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-content">
+            <h3>Advanced Sports Betting Strategies</h3>
+            <p>Learn professional techniques to maximize your winning potential in sports betting markets.</p>
+            <a href="#" class="read-more">Read Guide →</a>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-content">
+            <h3>Bankroll Management Essentials</h3>
+            <p>Discover the crucial money management strategies every serious bettor needs to know.</p>
+            <a href="#" class="read-more">Learn More →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Betting Arena Review. All rights reserved.
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <p>Professional betting analysts with over 15 years combined experience in the gambling industry.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="reviews.html">Latest Reviews</a></li>
+          <li><a href="tips.html">Betting Tips</a></li>
+          <li><a href="contact.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Responsible Gambling</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2024 Betting Arena Review. All rights reserved.
+    </div>
   </footer>
 
   <script>
@@ -155,6 +346,25 @@
       const nav = document.getElementById('nav-links');
       nav.classList.toggle('active');
     }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const nav = document.getElementById('nav-links');
+      const menuToggle = document.querySelector('.menu-toggle');
+      if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+        nav.classList.remove('active');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 </html>
