@@ -4,34 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reviews - Betting Arena Review</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    header {
-      background-color: #1a1aff;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo { font-size: 1.5em; font-weight: bold; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-    .content {
-      padding: 40px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo">Betting Arena Review</div>
-    <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <nav id="nav-links">
       <a href="index.html">Home</a>
       <a href="reviews.html">Reviews</a>
       <a href="tips.html">Tips</a>
@@ -39,9 +20,22 @@
     </nav>
   </header>
 
-  <div class="content">
-    <h1>Our Betting Platform Reviews</h1>
-    <p>Here you'll find detailed reviews of top betting platforms.</p>
+  <div class="hero">
+    <div>
+      <h1>Top Betting Platform Reviews</h1>
+      <p>Read in-depth reviews on trusted and trending betting sites.</p>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Betting Arena Review. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
