@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Betting Arena Review</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-color: white;
+      background-color: #f5f5f5;
     }
 
     header {
@@ -21,11 +25,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
     .logo {
       font-size: 1.5em;
       font-weight: bold;
+    }
+
+    nav {
+      display: flex;
     }
 
     nav a {
@@ -39,14 +48,27 @@
       text-decoration: underline;
     }
 
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
     .hero {
-      flex: 1;
+      flex-grow: 1;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 60px 20px;
-      background-color: #f5f5f5;
+      background: linear-gradient(to bottom right, #e6e6ff, #f5f5f5);
     }
 
     .btn {
@@ -58,6 +80,7 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 20px;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
@@ -70,12 +93,42 @@
       text-align: center;
       padding: 10px 0;
     }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1aff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        border-radius: 5px;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">Betting Arena Review</div>
-    <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav-links">
       <a href="index.html">Home</a>
       <a href="reviews.html">Reviews</a>
       <a href="tips.html">Tips</a>
@@ -84,7 +137,7 @@
   </header>
 
   <div class="hero">
-    <div class="hero-overlay">
+    <div>
       <h1>Welcome to Betting Arena Review</h1>
       <p>Your trusted source for betting platform reviews, expert tips, and winning strategies.</p>
       <button class="btn">Get Notified</button>
@@ -94,5 +147,12 @@
   <footer>
     &copy; 2025 Betting Arena Review. All rights reserved.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
