@@ -6,13 +6,14 @@
   <meta name="description" content="Expert betting platform reviews, winning strategies, and professional gambling tips from industry experts.">
   <meta name="keywords" content="betting reviews, gambling tips, sports betting, casino strategies, expert analysis">
   <meta name="author" content="Betting Arena Review">
-  <title>Betting Arena Review - Expert Betting Insights</title>
+  <title>Betting Arena Review - Professional Gambling Insights & Expert Reviews</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
   <style>
     :root {
       --primary-color: #333;
       --secondary-color: #28a745;
+      --accent-color: #ffc107;
       --text-dark: #343a40;
       --text-light: #f8f9fa;
       --background-light: #ffffff;
@@ -32,7 +33,16 @@
       min-height: 100vh;
       background-color: var(--background-light);
       color: var(--text-dark);
-      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
     }
 
     header {
@@ -52,7 +62,6 @@
       font-size: 1.3em;
       font-weight: 600;
       font-family: 'Roboto', sans-serif;
-      color: var(--text-light);
     }
 
     nav {
@@ -66,7 +75,6 @@
       padding: 0.7rem 1rem;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      text-decoration: none;
     }
 
     nav a:hover,
@@ -104,50 +112,7 @@
       padding: 4rem 2rem;
       background-color: var(--background-light);
       text-align: center;
-    }
-
-    .newsletter h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--primary-color);
-    }
-
-    .newsletter p {
-      margin-bottom: 1.5rem;
-      color: #6c757d;
-    }
-
-    .newsletter form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .newsletter input[type="email"] {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: 1px solid var(--border-color);
-      border-radius: 5px;
-    }
-
-    .btn {
-      background-color: var(--secondary-color);
-      color: var(--text-light);
-      padding: 14px 35px;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      max-width: 200px;
-      margin: auto;
-    }
-
-    .btn:hover {
-      background-color: #218838;
+      margin-top: auto;
     }
 
     footer {
@@ -182,14 +147,16 @@
         pointer-events: auto;
       }
 
+      nav a {
+        margin: 12px 0;
+        padding: 1rem 1.2rem;
+        font-size: 1.05rem;
+        border-radius: 5px;
+      }
+
       .menu-toggle {
         display: flex;
         margin-left: auto;
-      }
-
-      .btn {
-        padding: 10px 25px;
-        font-size: 0.9rem;
       }
     }
   </style>
@@ -211,18 +178,25 @@
     </nav>
   </header>
 
-  <!-- Newsletter Section -->
+  <!-- Newsletter Section at Bottom -->
   <section class="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <p>Stay updated with the latest strategies and platform reviews.</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit" class="btn">Subscribe</button>
+    <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Join Our Newsletter</h2>
+    <p style="margin-bottom: 1.5rem; color: #6c757d;">Stay updated with the latest strategies and platform reviews.</p>
+    <form style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
+      <input type="email" placeholder="Enter your email" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid var(--border-color); border-radius: 5px;" />
+      <button type="submit" class="btn" style="max-width: 200px; margin: auto; background-color: var(--secondary-color); color: var(--text-light); border: none; padding: 0.8rem; font-size: 1rem; border-radius: 30px;">Subscribe</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Betting Arena Review. All rights reserved.
+    &copy; 2025 Betting Arena Review. All rights reserved. |
+    <a href="/privacy-policy.html" style="color: var(--text-light);">Privacy Policy</a> |
+    <a href="/terms-of-service.html" style="color: var(--text-light);">Terms of Service</a>
+    <div style="margin-top: 1rem;">
+      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Facebook</a>
+      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Twitter</a>
+      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Instagram</a>
+    </div>
   </footer>
 
   <script>
