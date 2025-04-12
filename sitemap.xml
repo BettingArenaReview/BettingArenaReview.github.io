@@ -1,35 +1,41 @@
+<!-- sitemap.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site Map - Betting Arena Review</title>
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #fff;
       color: #333;
       padding: 2rem;
-      line-height: 1.6;
     }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #28a745;
     }
+
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
+
     li {
-      margin-bottom: 0.8rem;
+      margin: 0.7rem 0;
     }
+
     a {
-      color: #007bff;
       text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s;
     }
+
     a:hover {
-      text-decoration: underline;
+      color: #0056b3;
     }
   </style>
 </head>
@@ -41,9 +47,9 @@
     <li><a href="strategies.html">Betting Strategies</a></li>
     <li><a href="resources.html">Resources</a></li>
     <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="sitemap.html">Site Map</a></li>
     <li><a href="privacy-policy.html">Privacy Policy</a></li>
     <li><a href="terms-of-service.html">Terms of Service</a></li>
-    <li><a href="sitemap.html">Site Map</a></li>
   </ul>
 </body>
 </html>
