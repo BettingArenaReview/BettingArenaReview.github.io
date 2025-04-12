@@ -1,38 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bettingarenareview.github.io/</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/reviews.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/strategies.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/resources.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/contact.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/privacy-policy.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.50</priority>
-  </url>
-  <url>
-    <loc>https://bettingarenareview.github.io/terms-of-service.html</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.50</priority>
-  </url>
-</urlset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Map - Betting Arena Review</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #28a745;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.8rem;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Site Map</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="reviews.html">Platform Reviews</a></li>
+    <li><a href="strategies.html">Betting Strategies</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms-of-service.html">Terms of Service</a></li>
+    <li><a href="sitemap.html">Site Map</a></li>
+  </ul>
+</body>
+</html>
