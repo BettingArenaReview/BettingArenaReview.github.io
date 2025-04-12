@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Expert betting platform reviews, winning strategies, and professional gambling tips from industry experts">
-  <meta name="keywords" content="betting reviews, gambling tips, sports betting, casino strategies">
-  <title>Betting Arena Review - Professional Gambling Insights</title>
+  <meta name="description" content="Expert betting platform reviews, winning strategies, and professional gambling tips from industry experts. Enhance your betting knowledge and make informed decisions.">
+  <meta name="keywords" content="betting reviews, gambling tips, sports betting, casino strategies, expert analysis, betting platforms, winning strategies, professional gambling">
+  <meta name="author" content="Betting Arena Review">
+  <title>Betting Arena Review - Professional Gambling Insights & Expert Reviews</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
   <style>
     :root {
-      --primary-color: #1a1aff;
-      --secondary-color: #3366ff;
-      --text-light: #ffffff;
-      --background-light: #f5f5f5;
+      --primary-color: #007bff; /* Professional Blue */
+      --secondary-color: #28a745; /* Success Green */
+      --accent-color: #ffc107; /* Warning Yellow */
+      --text-dark: #343a40; /* Dark Gray */
+      --text-light: #f8f9fa; /* Light Gray */
+      --background-light: #ffffff; /* White */
+      --border-color: #dee2e6; /* Light Gray Border */
     }
 
     * {
@@ -22,46 +27,61 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       background-color: var(--background-light);
+      color: var(--text-dark);
+      line-height: 1.6;
     }
 
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Header Styles */
     header {
       background-color: var(--primary-color);
       color: var(--text-light);
-      padding: 1rem 2rem;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: 700;
+      font-family: 'Roboto', sans-serif;
     }
 
     nav {
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     nav a {
       color: var(--text-light);
-      text-decoration: none;
       font-weight: 500;
-      padding: 0.5rem;
+      padding: 0.7rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover,
     nav a.current {
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     .menu-toggle {
@@ -71,70 +91,116 @@
     }
 
     .menu-toggle span {
-      width: 25px;
+      width: 28px;
       height: 3px;
       background-color: var(--text-light);
-      margin: 4px 0;
+      margin: 5px 0;
+      transition: transform 0.3s ease;
     }
 
+    .menu-toggle.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero Section Styles */
     .hero {
       flex-grow: 1;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(135deg, #e6e6ff 0%, #f0f0ff 100%);
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+    }
+
+    .hero-content {
+      max-width: 800px;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
-      color: #333;
+      font-size: 3rem;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      font-family: 'Roboto', sans-serif;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      color: #666;
-      margin: 1.5rem 0;
+      font-size: 1.25rem;
+      color: #6c757d;
+      margin-bottom: 2rem;
     }
 
     .btn {
+      display: inline-block;
       background-color: var(--secondary-color);
       color: var(--text-light);
-      padding: 12px 30px;
+      padding: 14px 35px;
       border: none;
-      border-radius: 25px;
-      font-size: 1rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
       cursor: pointer;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #0040ff;
+      background-color: #218838;
     }
 
+    /* Footer Styles */
     footer {
-      background-color: var(--primary-color);
+      background-color: var(--text-dark);
       color: var(--text-light);
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      nav {
+        gap: 1rem;
+      }
+
+      nav a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
     }
 
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
-
       nav {
         display: none;
         flex-direction: column;
         background-color: var(--primary-color);
         position: absolute;
-        top: 70px;
+        top: 75px;
         right: 20px;
-        width: 180px;
+        width: 200px;
         border-radius: 5px;
         padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
 
       nav.active {
@@ -142,7 +208,34 @@
       }
 
       nav a {
-        margin: 10px 0;
+        margin: 12px 0;
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .logo {
+        font-size: 1.7rem;
+      }
+
+      .hero {
+        padding: 4rem 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -150,42 +243,46 @@
 <body>
   <header>
     <div class="logo">Betting Arena Review</div>
-    <div class="menu-toggle" onclick="toggleMenu()">
+    <button class="menu-toggle" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <nav id="nav-links">
       <a href="index.html" class="current">Home</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="tips.html">Tips</a>
-      <a href="contact.html">Contact</a>
+      <a href="reviews.html">Platform Reviews</a>
+      <a href="strategies.html">Betting Strategies</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div>
-      <h1>Welcome to Betting Arena Review</h1>
-      <p>Your go-to source for trusted betting reviews and expert strategies.</p>
-      <a href="tips.html"><button class="btn">Get Premium Insights</button></a>
+    <div class="hero-content">
+      <h1>Unlock Your Betting Potential with Expert Insights</h1>
+      <p>Get unbiased reviews of betting platforms, proven strategies, and professional tips to elevate your gambling game.</p>
+      <a href="strategies.html"><button class="btn">Explore Winning Strategies</button></a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Betting Arena Review. All rights reserved.
+    &copy; 2025 Betting Arena Review. All rights reserved. | <a href="/privacy-policy.html" style="color: var(--text-light);">Privacy Policy</a> | <a href="/terms-of-service.html" style="color: var(--text-light);">Terms of Service</a>
   </footer>
 
   <script>
     function toggleMenu() {
       const nav = document.getElementById('nav-links');
+      const toggle = document.querySelector('.menu-toggle');
       nav.classList.toggle('active');
+      toggle.classList.toggle('open');
     }
 
     document.addEventListener('click', function (e) {
       const nav = document.getElementById('nav-links');
       const toggle = document.querySelector('.menu-toggle');
-      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+      if (!nav.contains(e.target) && !toggle.contains(e.target) && nav.classList.contains('active')) {
         nav.classList.remove('active');
+        toggle.classList.remove('open');
       }
     });
   </script>
