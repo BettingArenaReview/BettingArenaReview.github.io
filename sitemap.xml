@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.yourdomain.com/</loc>
+    <loc>https://bettingarenareview.github.io/</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/reviews.html</loc>
+    <loc>https://bettingarenareview.github.io/reviews.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/strategies.html</loc>
+    <loc>https://bettingarenareview.github.io/strategies.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/resources.html</loc>
+    <loc>https://bettingarenareview.github.io/resources.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/contact.html</loc>
+    <loc>https://bettingarenareview.github.io/contact.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/privacy-policy.html</loc>
+    <loc>https://bettingarenareview.github.io/privacy-policy.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://www.yourdomain.com/terms-of-service.html</loc>
+    <loc>https://bettingarenareview.github.io/terms-of-service.html</loc>
     <lastmod>2025-04-10</lastmod>
     <priority>0.50</priority>
   </url>
