@@ -1,55 +1,67 @@
-<!-- sitemap.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Map - Betting Arena Review</title>
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fff;
-      color: #333;
-      padding: 2rem;
-    }
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #28a745;
-    }
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/reviews.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    li {
-      margin: 0.7rem 0;
-    }
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/bonuses.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    a {
-      text-decoration: none;
-      color: #007bff;
-      transition: color 0.3s;
-    }
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/tips.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    a:hover {
-      color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <h1>Site Map</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="reviews.html">Platform Reviews</a></li>
-    <li><a href="strategies.html">Betting Strategies</a></li>
-    <li><a href="resources.html">Resources</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="sitemap.html">Site Map</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-    <li><a href="terms-of-service.html">Terms of Service</a></li>
-  </ul>
-</body>
-</html>
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/about.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/contact.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/privacy-policy.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/terms-of-service.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://your-github-username.github.io/your-repository-name/bcgame-vs-1xbet-bonus.html</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  </urlset>
