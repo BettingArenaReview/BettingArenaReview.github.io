@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/</loc>
+    <loc>https://bettingarenareview.github.io/</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/reviews.html</loc>
+    <loc>https://bettingarenareview.github.io/reviews.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/bonuses.html</loc>
+    <loc>https://bettingarenareview.github.io/bonuses.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/tips.html</loc>
+    <loc>https://bettingarenareview.github.io/tips.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/about.html</loc>
+    <loc>https://bettingarenareview.github.io/about.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/contact.html</loc>
+    <loc>https://bettingarenareview.github.io/contact.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/privacy-policy.html</loc>
+    <loc>https://bettingarenareview.github.io/privacy-policy.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/terms-of-service.html</loc>
+    <loc>https://bettingarenareview.github.io/terms-of-service.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://your-github-username.github.io/your-repository-name/bcgame-vs-1xbet-bonus.html</loc>
+    <loc>https://bettingarenareview.github.io/bcgame-vs-1xbet-bonus.html</loc>
     <lastmod>2025-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  </urlset>
+</urlset>
