@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background: var(--bg-light);
-  min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -30,13 +30,8 @@ a:hover {
 header {
   background: var(--primary);
   color: white;
-  padding: 1rem 0; /* Reduced header padding */
+  padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-@media (max-width: 768px) {
-  header {
-    padding: 0.75rem 0; /* Further reduced header padding on mobile */
-  }
 }
 .container {
   max-width: 1200px;
@@ -48,20 +43,9 @@ header {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-@media (max-width: 768px) {
-  .logo {
-    font-size: 1.75rem; /* Slightly reduce logo size on mobile */
-    margin-bottom: 0.25rem; /* Reduced logo margin on mobile */
-  }
-}
 .tagline {
   color: var(--light);
   font-size: 0.9rem;
-}
-@media (max-width: 768px) {
-  .tagline {
-    font-size: 0.8rem; /* Slightly reduce tagline size on mobile */
-  }
 }
 nav {
   background: var(--primary);
@@ -125,7 +109,7 @@ nav ul li a:hover {
   background-color: #c0392b;
 }
 main.container {
-  flex-grow: 1; /* Allow main content to grow and push footer to the bottom */
+  flex-grow: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -173,8 +157,8 @@ footer {
   background: var(--primary);
   color: white;
   text-align: center;
-  padding: 1rem 0; /* Reduced footer padding */
-  margin-top: auto; /* Push footer to the bottom of the flex container */
+  padding: 1rem 0;
+  margin-top: auto;
 }
 .footer-links a {
   color: var(--light);
@@ -201,22 +185,22 @@ footer {
 .mobile-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Puts space between the icon and potential logo/other elements */
-  padding: 0.25rem 1rem; /* Reduced padding around the hamburger icon on mobile */
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
 }
 
 .hamburger-icon {
-  display: none; /* Initially hidden on larger screens */
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 22px;
-  position: relative; /* For positioning the lines */
+  position: relative;
 }
 
 .hamburger-icon div {
   width: 100%;
   height: 3px;
-  background-color: var(--light); /* Or any color you prefer */
+  background-color: var(--light);
   position: absolute;
   top: 0;
   left: 0;
@@ -234,31 +218,31 @@ footer {
 }
 
 .mobile-nav .nav-links {
-  display: none; /* Initially hidden on smaller screens */
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%; /* Make it full width when open */
-  background-color: var(--primary); /* Match your nav background */
-  text-align: center; /* Center the links */
+  width: 100%;
+  background-color: var(--primary);
+  text-align: center;
   position: absolute;
-  top: 100%; /* Position it below the header/nav */
+  top: 100%;
   left: 0;
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 10;
 }
 
 .mobile-nav .nav-links.open {
-  display: block; /* Show the links when the 'open' class is added */
+  display: block;
 }
 
 .mobile-nav .nav-links li {
   margin: 0;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional separator */
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobile-nav .nav-links li a {
-  display: block; /* Make the whole list item clickable */
+  display: block;
   color: var(--light);
   text-decoration: none;
   font-weight: bold;
@@ -266,26 +250,49 @@ footer {
 }
 
 .mobile-nav .nav-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker hover */
+  background-color: rgba(255, 255, 255, 0.2);
   color: var(--secondary);
 }
 
-/* Media query for mobile screens (adjust max-width as needed) */
 @media (max-width: 768px) {
-  nav > .container { /* Target the container within the original <nav> */
-    display: none; /* Hide the desktop navigation */
+  header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-  .hamburger-icon {
-    display: block; /* Show the hamburger icon on mobile */
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .tagline {
+    font-size: 0.7rem;
   }
   .mobile-nav {
-    display: flex; /* Ensure the hamburger icon is visible */
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
   }
-}
-
-/* Media query for larger screens */
-@media (min-width: 769px) {
-  .mobile-nav {
-    display: none; /* Hide the mobile navigation elements on desktop */
+  footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .footer-links {
+    font-size: 0.8rem;
+  }
+  .social-icons {
+    margin-top: 0.5rem;
+  }
+  .social-icons a {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+  .footer-links a {
+    margin: 0 8px;
+  }
+  footer p {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
   }
 }
