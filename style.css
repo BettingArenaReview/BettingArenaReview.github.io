@@ -56,7 +56,6 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: auto; /* Allow horizontal scrolling for desktop nav if needed */
 }
 nav ul {
   list-style: none;
@@ -257,10 +256,10 @@ footer {
 
 @media (max-width: 768px) {
   nav > .container {
-    display: none; /* Ensure desktop nav is hidden */
+    display: none; /* Hide desktop nav on mobile */
   }
   .hamburger-icon {
-    display: block; /* Ensure hamburger icon is visible */
+    display: block; /* Show hamburger icon on mobile */
   }
   header {
     padding-top: 0.5rem;
