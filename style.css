@@ -30,8 +30,13 @@ a:hover {
 header {
   background: var(--primary);
   color: white;
-  padding: 1.5rem 0;
+  padding: 1rem 0; /* Reduced header padding */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 0; /* Further reduced header padding on mobile */
+  }
 }
 .container {
   max-width: 1200px;
@@ -43,9 +48,20 @@ header {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.75rem; /* Slightly reduce logo size on mobile */
+    margin-bottom: 0.25rem; /* Reduced logo margin on mobile */
+  }
+}
 .tagline {
   color: var(--light);
   font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 0.8rem; /* Slightly reduce tagline size on mobile */
+  }
 }
 nav {
   background: var(--primary);
@@ -157,7 +173,7 @@ footer {
   background: var(--primary);
   color: white;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0; /* Reduced footer padding */
   margin-top: auto; /* Push footer to the bottom of the flex container */
 }
 .footer-links a {
@@ -186,7 +202,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Puts space between the icon and potential logo/other elements */
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  padding: 0.25rem 1rem; /* Reduced padding around the hamburger icon on mobile */
 }
 
 .hamburger-icon {
