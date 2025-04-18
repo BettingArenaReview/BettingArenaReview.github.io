@@ -176,3 +176,96 @@ footer {
 .social-icons a:hover {
   color: var(--secondary);
 }
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Puts space between the icon and potential logo/other elements */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.hamburger-icon {
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative; /* For positioning the lines */
+}
+
+.hamburger-icon div {
+  width: 100%;
+  height: 3px;
+  background-color: var(--light); /* Or any color you prefer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-icon div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon div:last-child {
+  top: auto;
+  bottom: 0;
+}
+
+.mobile-nav .nav-links {
+  display: none; /* Initially hidden on smaller screens */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Make it full width when open */
+  background-color: var(--primary); /* Match your nav background */
+  text-align: center; /* Center the links */
+  position: absolute;
+  top: 100%; /* Position it below the header/nav */
+  left: 0;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.mobile-nav .nav-links.open {
+  display: block; /* Show the links when the 'open' class is added */
+}
+
+.mobile-nav .nav-links li {
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional separator */
+}
+
+.mobile-nav .nav-links li a {
+  display: block; /* Make the whole list item clickable */
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-nav .nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker hover */
+  color: var(--secondary);
+}
+
+/* Media query for mobile screens (adjust max-width as needed) */
+@media (max-width: 768px) {
+  nav > .container { /* Target the container within the original <nav> */
+    display: none; /* Hide the desktop navigation */
+  }
+  .hamburger-icon {
+    display: block; /* Show the hamburger icon on mobile */
+  }
+  .mobile-nav {
+    display: flex; /* Ensure the hamburger icon is visible */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none; /* Hide the mobile navigation elements on desktop */
+  }
+}
