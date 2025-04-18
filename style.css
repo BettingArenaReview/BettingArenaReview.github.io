@@ -30,7 +30,7 @@ a:hover {
 header {
   background: var(--primary);
   color: white;
-  padding: 1rem 0;
+  padding: 0.75rem 0; /* Reduced header padding */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .container {
@@ -157,7 +157,7 @@ footer {
   background: var(--primary);
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.75rem 0; /* Reduced footer padding */
   margin-top: auto;
 }
 .footer-links a {
@@ -255,12 +255,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav > .container {
-    display: none; /* Hide desktop nav on mobile */
-  }
-  .hamburger-icon {
-    display: block; /* Show hamburger icon on mobile */
-  }
   header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
