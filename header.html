@@ -19,3 +19,17 @@
         </ul>
     </nav>
   </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburgerIcon = document.querySelector('.hamburger-icon');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (hamburgerIcon && navLinks) {
+        hamburgerIcon.addEventListener('click', function() {
+          navLinks.classList.toggle('open');
+          hamburgerIcon.classList.toggle('open'); // Optional: for hamburger icon animation
+        });
+      }
+    });
+  </script>
