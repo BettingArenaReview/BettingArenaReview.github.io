@@ -1,218 +1,34 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Expert betting platform reviews, winning strategies, and professional gambling tips from industry experts.">
-  <meta name="keywords" content="betting reviews, gambling tips, sports betting, casino strategies, expert analysis">
-  <meta name="author" content="Betting Arena Review">
-  <title>Betting Arena Review - Professional Gambling Insights & Expert Reviews</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+  <title>Betting Arena Review - Blog</title>
   <style>
-    :root {
-      --primary-color: #333;
-      --secondary-color: #28a745;
-      --accent-color: #ffc107;
-      --text-dark: #343a40;
-      --text-light: #f8f9fa;
-      --background-light: #ffffff;
-      --border-color: #dee2e6;
-    }* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--background-light);
-  color: var(--text-dark);
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-header {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 1.2rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  font-size: 1.3em;
-  font-weight: 600;
-  font-family: 'Roboto', sans-serif;
-}
-
-nav {
-  display: flex;
-  gap: 2rem;
-}
-
-nav a {
-  color: var(--text-light);
-  font-weight: 500;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover,
-nav a.current {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.menu-toggle.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-main {
-  flex: 1;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-
-.newsletter {
-  padding: 2.5rem 1.5rem;
-  background-color: var(--background-light);
-  text-align: center;
-}
-
-footer {
-  background-color: var(--text-dark);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 75px;
-    right: 20px;
-    width: 220px;
-    border-radius: 8px;
-    padding: 1rem;
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  nav.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  nav a {
-    margin: 12px 0;
-    padding: 1rem 1.2rem;
-    font-size: 1.05rem;
-    border-radius: 5px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    margin-left: auto;
-  }
-}
-
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #333; color: white; padding: 1rem; text-align: center; }
+    main { padding: 2rem; max-width: 800px; margin: auto; }
+    a { text-decoration: none; color: #007bff; }
+    .post-list { list-style: none; padding: 0; }
+    .post-item { padding: 1rem 0; border-bottom: 1px solid #ddd; }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">Betting Arena Review</div>
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="nav-links">
-      <a href="index.html" class="current">Home</a>
-      <a href="reviews.html">Platform Reviews</a>
-      <a href="strategies.html">Betting Strategies</a>
-      <a href="resources.html">Resources</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>  <main>
-    <h1>Welcome to Betting Arena Review</h1>
-    <p>Explore expert reviews, winning strategies, and trusted betting insights.</p>
-  </main>  <!-- Newsletter Section -->  <section class="newsletter">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Join Our Newsletter</h2>
-    <p style="margin-bottom: 1.5rem; color: #6c757d;">Stay updated with the latest strategies and platform reviews.</p>
-    <form style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
-      <input type="email" placeholder="Enter your email" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid var(--border-color); border-radius: 5px;" />
-      <button type="submit" class="btn" style="max-width: 200px; margin: auto; background-color: var(--secondary-color); color: var(--text-light); border: none; padding: 0.8rem; font-size: 1rem; border-radius: 30px;">Subscribe</button>
-    </form>
-  </section>  <footer>
-    &copy; 2025 Betting Arena Review. All rights reserved. |
-    <a href="/privacy-policy.html" style="color: var(--text-light);">Privacy Policy</a> |
-    <a href="/terms-of-service.html" style="color: var(--text-light);">Terms of Service</a>
-    <div style="margin-top: 1rem;">
-      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Facebook</a>
-      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Twitter</a>
-      <a href="#" style="margin: 0 10px; color: var(--text-light); font-size: 1.2rem;">Instagram</a>
-    </div>
-  </footer>  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('nav-links');
-      const toggle = document.querySelector('.menu-toggle');
-      nav.classList.toggle('active');
-      toggle.classList.toggle('open');
-    }
+    <h1>Betting Arena Review</h1>
+    <p>Latest Reviews & Betting Strategies</p>
+  </header>
 
-    document.addEventListener('click', function (e) {
-      const nav = document.getElementById('nav-links');
-      const toggle = document.querySelector('.menu-toggle');
-      if (!nav.contains(e.target) && !toggle.contains(e.target) && nav.classList.contains('active')) {
-        nav.classList.remove('active');
-        toggle.classList.remove('open');
-      }
-    });
-  </script></body>
+  <main>
+    <ul class="post-list">
+      <li class="post-item"><a href="bcgame-vs-1xbet.html">BC.Game vs 1xBet: Which One is Better?</a></li>
+      <li class="post-item"><a href="how-to-bet-smart.html">How to Bet Smart and Win More</a></li>
+      <li class="post-item"><a href="top-casino-tips.html">Top 10 Casino Tips for Beginners</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Betting Arena Review
+  </footer>
+</body>
 </html>
